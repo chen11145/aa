@@ -30,6 +30,7 @@ def index():
 
     X += "<a href=/spider>網路爬蟲擷取子青老師課程資料</a><br><br>"
     X += "<br><a href=/movie>讀取開眼電影即將上映影片，寫入Firestore</a><br>"
+    X += "<a href=/searchQ>查詢開眼電影即將上映影片</a><br>"
     return X
 
 @app.route("/mis")
