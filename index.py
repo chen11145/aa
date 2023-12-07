@@ -238,8 +238,8 @@ def webhook():
     action =  req.get("queryResult").get("action")
     #msg =  req.get("queryResult").get("queryText")
     #info = "動作：" + action + "； 查詢內容：" + msg
+    rate =  req.get("queryResult").get("parameters").get("rate")
     if (action == "rateChoice"):
-        rate =  req.get("queryResult").get("parameters").get("rate")
         info = "我是陳彥霖開發的電影聊天機器人,您選擇的電影分級是：" + rate + "，相關電影：\n"
         db = firestore.client()
         collection_ref = db.collection("電影含分級")
