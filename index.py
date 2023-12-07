@@ -251,7 +251,6 @@ def webhook():
                 result += "片名：" + dict["title"] + "\n"
                 result += "介紹：" + dict["hyperlink"] + "\n\n"
         info += result
-
     return make_response(jsonify({"fulfillmentText": info}))
 
 
